@@ -9,7 +9,6 @@ import Excel from 'exceljs';
 // get same data for hospitalizations and deaths, etc.
 
 const todaysDate = new Date().toLocaleDateString('en-us', { year: '2-digit', month: '2-digit', day: '2-digit' });
-// const url = 'https://app.powerbigov.us/view?r=eyJrIjoiYjZhZjQ4YWQtYWJiYS00ODI4LTg0ODYtN2I0MmFkMTBhN2U2IiwidCI6IjExZDBlMjE3LTI2NGUtNDAwYS04YmEwLTU3ZGNjMTI3ZDcyZCJ9';
 const url = 'https://www.doh.wa.gov/Emergencies/COVID19/DataDashboard';
 
 export const scrape = async (): Promise<void> => {
